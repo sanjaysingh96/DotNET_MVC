@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<h2>====================This is Viewbag data=================</h2>
+<h2>@ViewBag.san</h2>
+<h2>@ViewBag.data</h2>
+<h2>@ViewBag.data1</h2>
+<h2>@ViewBag.data2</h2>
+<ul>
+    @foreach (var i in ViewBag.list)
+    {
+        <li>@i</li>
+    }
+</ul>
+<h2>================<u>This is Viewdata</u> ==================</h2>
+<h3>@ViewData["abc"]</h3>
+<h3>@ViewData["data"]</h3>
+<h3>@ViewData["data1"]</h3>
+<h3>@ViewData["data2"]</h3>
+<ul>
+    @foreach (var item in (List<string>)ViewData["list"])
+    {
+        <li>@item</li>
+    }
+</ul>
+<h2>================This is TempData==================</h2>
+<h3>@TempData["abc"]</h3>
+<h3>@TempData["data"]</h3>
+<h3>@TempData["data1"]</h3>
+<h3>@TempData["data2"]</h3>
+
+<h2>====== This is Session part ======</h2>
+<h3>@Session["abc"]</h3>

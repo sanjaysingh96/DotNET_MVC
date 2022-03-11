@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+@model WebAppFirst.Models.Myclass
+@Html.TextBoxFor(v => v.name)
+@Html.TextBoxFor(v => v.age)
+@Html.TextBoxFor(v => v.email)
+
+
+<h2>================This is TempData==================</h2>
+<h3>@TempData["abc"]</h3>
+<h3>@TempData["data"]</h3>
+<h3>@TempData["data1"]</h3>
+<h3>@TempData["data2"]</h3>
+
+<h2>====== This is Session part ======</h2>
+<h3>@Session["abc"]</h3>
